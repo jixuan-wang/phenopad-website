@@ -1,476 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>PhenoPad</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
-
-    <!-- Custom fonts -->
-    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
-    <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" >
-    <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Caveat&amp;subset=cyrillic,latin-ext" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Bad+Script" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:300" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Heebo:100" rel="stylesheet">
-
-    <!-- Plugin CSS -->
-    <link rel="stylesheet" href="device-mockups/device-mockups.min.css">
-
-    <!-- Custom styles for this template -->
-    <link href="vendor/Mystyle.css" rel="stylesheet">
-    <link href="css/new-age.css" rel="stylesheet">
-    <link href="css/hover.css" rel="stylesheet">
-    <link rel="shortcut icon" href="img/tab-logo.png" type="image/png" />
-    <!-- Fancy Box Light Box Plugin for photo viewing -->
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.css" />
-    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.js"></script>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Interactive PhenoPad feature demo.">
+    <title>PhenoPad Demo</title>
+    <link rel="shortcut icon" href="img/tab-logo.png" type="image/png">
+    <link rel="stylesheet" href="css/site.css">
   </head>
+  <body>
+    <header class="site-header solid" data-header>
+      <a class="brand" href="index.html" aria-label="PhenoPad home">
+        <img src="img/tab-logo.png" alt="">
+        <span>PhenoPad</span>
+      </a>
+      <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav class="site-nav" id="site-nav" data-nav>
+        <a href="index.html#features">Features</a>
+        <a href="#handwriting">Handwriting</a>
+        <a href="#records">Records</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+    </header>
 
-  <body id="page-top">
-      <div class="d-flex flex-row justify-content-center mt-5 pt-5">
-          <h3 class="display-5 noselect"> Phenopad Feature Overview </h3>
+    <main class="demo-page">
+      <section class="demo-hero">
+        <div>
+          <p class="eyebrow">Demo Library</p>
+          <h1>Watch PhenoPad workflows in action.</h1>
+          <p>Choose a feature and the walkthrough updates instantly. Each clip is pulled from the original PhenoPad demo material.</p>
         </div>
+        <img src="img/phenopad-logo-blue.png" alt="PhenoPad logo">
+      </section>
 
-
-    <!-- HWR SECTION RESPONSIVE -->
-    <section class="hwr" id="HWR">
-      <div class="container">
-          <div class="row p-3 justify-content-center  mb-5">
-              <h3 class="display-5 mb-5 noselect">Taking Notes by Hand</h3>
-            </div>
-
-
-            <div class="row flex-row  justify-content-center mb-5">
-              <div class="col-lg-6 mb-5">
-                  <div class="card rounded video shadow my-auto p-0 mb-3">
-                      <video id="hwrVideo" class="img-fluid noselect" autoplay loop playsinline muted>
-                          <source src="./vid/ManualVids_edited/hw1.mov" type="video/mp4">
-                        </video>  
-                  </div>
-                  <br>
-                  <div style="padding: 5px;margin-top: 5px;">
-                    When writing, any phenotypes found will show up along with text recognition of the line.                
-                    Click on the phenotype to indicate the presence of this symptom (Y state).
-                    Click again will change to the absence of this symptom (N state).
-                </div>
-              </div>
-              <div class="col-lg-6 mb-5">
-                <div class="card rounded video shadow my-auto p-0 mb-3">
-                      <video id="hwrVideo" class="img-fluid noselect" autoplay loop playsinline muted>
-                          <source src="./vid/ManualVids_edited/hw2.mov" type="video/mp4">
-                        </video> 
-                </div>
-                <br>
-                <div style="padding: 5px;margin-top: 5px;">
-                    All recognized phenotypes including candidates are gathered at the top panel bar for view and edit.
-                </div>
-                </div>
-            </div>
-
-            <div class="row flex-row  justify-content-center mb-5">
-                <div class="col-lg-6 mb-5">
-                    <div class="card rounded video shadow my-auto p-0">
-                        <video id="hwrVideo" class="img-fluid noselect" autoplay loop playsinline muted>
-                            <source src="./vid/ManualVids_edited/hw3.mov" type="video/mp4">
-                          </video>  
-                    </div>
-                    <br>
-                    <div style="padding: 5px;">
-                            Orange words indicates the predicted meaning of an abbreviation found.
-                            Click on the word to change to other possible meanings of this abbreviation.
-                        </div>
-
-                </div>
-                <div class="col-lg-6 mb-5">
-                    <div class="card rounded video shadow my-auto p-0">
-                        <video id="hwrVideo" class="img-fluid noselect" autoplay loop playsinline muted>
-                            <source src="./vid/ManualVids_edited/hw5.mov" type="video/mp4">
-                        </video> 
-                    </div>
-                    <br>
-                    <div style="padding: 5px;">
-                        In case the recognition misses the correct word, user can also manually choose from candidate alternatives.
-                        </div>
-    
-        
-
-                </div>
-              </div>
-
-              <div class="row flex-row  justify-content-center mb-5">
-
-
-                    <div class="col-lg-7 mb-5">
-                        <div class="card rounded video shadow my-auto p-0">
-                            <video id="hwrVideo" class="img-fluid noselect" autoplay loop playsinline muted>
-                                <source src="./vid/ManualVids_edited/hw8.mov" type="video/mp4">
-                              </video>  
-                        </div>
-                        <br>
-                        <div style="padding: 5px;">
-                            The left menu panel provides a brief view of all saved phenotypes along with further phenotype suggestions as well 
-                            as disease prediction (differential diagnosis).
-                        </div>
-
-                    </div>
-  
-                </div>
-
-                <div class="row flex-row  justify-content-center mb-5">
-                    <div class="col-lg-6 mb-5">
-                        <div class="card rounded video shadow my-auto p-0">
-                              <video id="hwrVideo" class="img-fluid noselect" autoplay loop playsinline muted>
-                                  <source src="./vid/ManualVids_edited/hw7.mov" type="video/mp4">
-                                </video> 
-                        </div>
-                        <br>
-                        <div style="padding: 5px;">
-                                Hold the side button of the pen to select a part of a line for re-recognition and phenotype searching. 
-                            </div>
-                    </div>
-
-                    <div class="col-lg-6 mb-5">
-                        <div class="card rounded video shadow my-auto p-0">
-                            <video id="hwrVideo" class="img-fluid noselect" autoplay loop playsinline muted>
-                                <source src="./vid/ManualVids_edited/hw27.MOV" type="video/mp4">
-                              </video>  
-                        </div>
-                        <br>
-                        <div style="padding: 5px;">
-                            Overflowing phenotypes can be viewed by expanding the top panel bar.
-                        </div>
-                    </div>
-                  </div>
-
-                  <div class="row flex-row  justify-content-center mb-5">
-                      <div class="col-lg-6 mb-5">
-                          <div class="card rounded video shadow my-auto p-0">
-                              <video id="hwrVideo" class="img-fluid noselect" autoplay loop playsinline muted>
-                                  <source src="./vid/ManualVids_edited/hw20.mov" type="video/mp4">
-                                </video>  
-                          </div>
-                          <br>
-                          <div style="padding: 5px;">
-                                Draw a square to add drawings, images or photos.
-                                Move photos or drawings by dragging the button at top-right corner.
-                            </div>
-
-                          </div>
-                          <div class="col-lg-6 mb-5">
-                                <div class="card rounded video shadow my-auto p-0">
-                                      <video id="hwrVideo" class="img-fluid noselect" autoplay loop playsinline muted>
-                                          <source src="./vid/ManualVids_edited/hw21.mov" type="video/mp4">
-                                        </video> 
-                                </div>
-                                <br>
-                                <div style="padding: 5px;">
-                                        User can annnotate photo and images using differnt pen styles.
-                                        Hide the control by clicking the "minimize" button at top-left corner. It will be hidden on the right side panel. 
-                                        Clicking on the icon again to maximize it.
-                                    </div>
-                                    </div>
-
-
-      
-                      
-
-                    </div>
-               
-
-      </div>
-    </section>
-
-    <section class="speech" id="TextRecognition">
-      <div class="container">
-          <div class="row justify-content-center  p-3 mb-5">
-              <h3 class="display-5 mb-5 noselect">Editing Recognized Text</h3>
-            </div>
-
-
-            <div class="row flex-row  justify-content-center mb-5">
-              <div class="col-lg-6 mb-5">
-                  <div class="card rounded video shadow my-auto p-0 mb-3">
-                      <video id="hwrVideo" class="img-fluid noselect" autoplay loop playsinline muted>
-                          <source src="./vid/ManualVids_edited/hw23.mp4" type="video/mp4">
-                        </video>  
-                  </div>
-                  <br>
-                  <div style="padding: 5px;">
-                    All written notes are converted to text words in background, 
-                      user can toggle between EDIT/VIEW mode to see both raw writtings and the text.               
-                    Clicking on the recognized word block will do the same as changing word candidates
-                </div>
-              </div>
-              <div class="col-lg-6 mb-5">
-                <div class="card rounded video shadow my-auto p-0 mb-3">
-                      <video id="hwrVideo" class="img-fluid noselect" autoplay loop playsinline muted>
-                          <source src="./vid/ManualVids_edited/hw24.mp4" type="video/mp4">
-                        </video> 
-                </div>
-                <br>
-                <div style="padding: 5px;">
-                    Tapping on a word in EDIT mode will instantly display alternatives for modification, 
-                    double tapping will auto analyze a phrase for potential phenotypes.
-                </div>
-                </div>
-            </div>
-
-                <div class="row flex-row  justify-content-center mb-5">
-                    <div class="col-lg-6 mb-5">
-                        <div class="card rounded video shadow my-auto p-0">
-                            <video id="hwrVideo" class="img-fluid noselect" autoplay loop playsinline muted>
-                                <source src="./vid/ManualVids_edited/hw25.mp4" type="video/mp4">
-                              </video>  
-                        </div>
-                    </div>
-                    <br>
-                    <div class="col-lg-6 mb-5">
-                        <b style="font-size: 16pt">Manully revising incorrect recognized text
-                          </b>
-                          
-                            <ul class="mt-5">
-                              <li> In case that all recognized alternatives are incorrect, the user can choose to manually revise recognized text.
-                              </li>
-                              <li> Input by clicking on the text input field and write (or type in keyboard) in the text for correction.
-                              </li>
-                              <li>
-                                The results will be immediately recorded and queried for phenotype analysis.
-                              </li>
-                            </ul>
-                          </p>
-                    </div>
-                  </div>               
-
-      </div>
-    </section>
-
-    <!-- ehr-->
-    <section class="hwr" id="EHR">
-      <div class="container">
-        <div class="row justify-content-center  p-3 mb-5">
-            <h3 class="display-5 mb-5 noselect">Editing on History Records</h3>
+      <section class="section demo-player" aria-labelledby="player-title">
+        <div class="section-heading compact">
+          <p class="eyebrow">Selected Demo</p>
+          <h2 id="player-title" data-demo-title>Taking notes by hand</h2>
+          <p data-demo-copy>Phenotypes and recognition results appear while the clinician writes, keeping review close to the original stroke.</p>
+        </div>
+        <div class="player-layout">
+          <div class="video-shell large">
+            <video muted loop playsinline controls autoplay data-demo-video>
+              <source src="vid/ManualVids_edited/hw1.mov" type="video/mp4">
+            </video>
           </div>
+          <div class="demo-list" data-demo-list aria-label="Choose demo video"></div>
+        </div>
+      </section>
 
-          <div class="row flex-row  justify-content-center mb-5">
-              <div class="col-lg-6 mb-5">
-                  <div class="card rounded video shadow my-auto p-0">
-                      <video id="hwrVideo" class="img-fluid noselect" autoplay loop playsinline muted>
-                          <source src="./vid/ManualVids_edited/hw9.mov" type="video/mp4">
-                      </video>  
-                  </div>
-              </div>
-              <div class="col-lg-6 mb-5">
-                  <p class="stretch" style="font-size: 16px;">
-                      <b>Importing Hisrtory records</b>
-                        <ul>
-                          <li> To use the editing mode, click on the “Edit EHR” button at home page. 
-                            </li>
-                          <li>You can import previous records from a text file or by copying and pasting the text into PhenoPad.</li>
-                          <li>Selecting "From File" to import text from a .txt file.</li>
-                          </ul>
-                      </p>
-              </div>
-            </div>
+      <section class="section demo-groups" id="handwriting">
+        <div class="section-heading">
+          <p class="eyebrow">What To Try</p>
+          <h2>Fast paths through the product.</h2>
+        </div>
+        <div class="guide-grid">
+          <article>
+            <h3>Handwriting</h3>
+            <p>Recognize notes, expand abbreviations, revise words, and search selected phrases for phenotypes.</p>
+            <button class="text-button" type="button" data-demo-pick="handwriting">Play handwriting flow</button>
+          </article>
+          <article>
+            <h3>Text Editing</h3>
+            <p>Switch between raw writing and recognized text, choose candidates, and manually correct recognition output.</p>
+            <button class="text-button" type="button" data-demo-pick="text">Play editing flow</button>
+          </article>
+          <article id="records">
+            <h3>History Records</h3>
+            <p>Import notes, annotate records, insert content, highlight text, and remove outdated details with pen gestures.</p>
+            <button class="text-button" type="button" data-demo-pick="records">Play records flow</button>
+          </article>
+          <article>
+            <h3>Add-Ins</h3>
+            <p>Add drawings, local images, and photos directly into the note surface, then annotate and reposition them.</p>
+            <button class="text-button" type="button" data-demo-pick="addin">Play add-ins flow</button>
+          </article>
+        </div>
+      </section>
 
-            <div class="row flex-row  justify-content-center mb-5">
-                <div class="col-lg-6 mb-5">
-                    <div class="card rounded video shadow my-auto p-0">
-                        <video id="hwrVideo" class="img-fluid noselect" autoplay loop playsinline muted>
-                            <source src="./vid/ManualVids_edited/hw10.mov" type="video/mp4">
-                          </video>  
-                    </div>
-                    <br>
-                    <div style="padding: 5px;">
-                        Select "From Paste" for pasting record to empty page, double tap on canvas and paste copied text.
-                    </div>
-    
-                </div>
-                <div class="col-lg-6 mb-5">
-                    <div class="card rounded video shadow my-auto p-0">
-                          <video id="hwrVideo" class="img-fluid noselect" autoplay loop playsinline muted>
-                              <source src="./vid/ManualVids_edited/hw11.mov" type="video/mp4">
-                            </video> 
-                    </div>
-                    <br>
-                    <div style="padding: 5px;">
-                        User can also use the same "Paste to end" function to add new content at the end of a document.
-                    </div>
-                </div>
-              </div>
+      <section class="section image-grid-section">
+        <div class="section-heading compact">
+          <p class="eyebrow">Still Views</p>
+          <h2>Key screens from the original demo.</h2>
+        </div>
+        <div class="image-grid">
+          <button class="image-tile" type="button" data-lightbox="img/phenopad/hwr/hwr.jpg" data-title="Handwriting recognition with abbreviation expansion">
+            <img src="img/phenopad/hwr/hwr.jpg" alt="Handwriting recognition">
+            <span>Handwriting</span>
+          </button>
+          <button class="image-tile" type="button" data-lightbox="img/phenopad/hwr/ab2.jpg" data-title="Abbreviation disambiguation after adding local context">
+            <img src="img/phenopad/hwr/ab2.jpg" alt="Abbreviation disambiguation">
+            <span>Abbreviations</span>
+          </button>
+          <button class="image-tile" type="button" data-lightbox="img/phenopad/speech/speech4.png" data-title="Medical term detection from speech transcripts">
+            <img src="img/phenopad/speech/speech4.png" alt="Speech transcript term detection">
+            <span>Speech NLP</span>
+          </button>
+          <button class="image-tile" type="button" data-lightbox="img/phenopad/extra/addin_drawing.jpg" data-title="Drawing add-in for pedigree sketches">
+            <img src="img/phenopad/extra/addin_drawing.jpg" alt="Drawing add-in">
+            <span>Drawing Add-In</span>
+          </button>
+        </div>
+      </section>
+    </main>
 
-              <div class="row flex-row  justify-content-center mb-5">
-                  <div class="col-lg-6 mb-5">
-                      <div class="card rounded video shadow my-auto p-0">
-                          <video id="hwrVideo" class="img-fluid noselect" autoplay loop playsinline muted>
-                              <source src="./vid/ManualVids_edited/hw29.mov" type="video/mp4">
-                            </video>  
-                      </div>
-                  </div>
-                  <div class="col-lg-6 mb-5">
-                      <p class="stretch" style="font-size: 16px;">
-                          <b>Adding annotations</b>
-                            <ul>
-                              <li>Select words by underline and choose "Annotate" from menu.</li>
-                              <li>Write the comment on the input panel and toggle between handwriting/typing mode through buttons at top.</li>
-                              <li>To add comment, click on the "+" button or tap anywhere outside of input panel, 
-                                the annotation will then be added as a yellow sticky note on side.</li>
-                              <li>The user can also choose to convert the annotation to recognized text by clicking "Convert Text".</li>
-                              <li>Tap/Click on the sticky note for editing the annotation.</li>
-                            </ul>
-                          </p>
-                  </div>
-                </div>
-
-                <div class="row flex-row  justify-content-center mb-5">
-                    <div class="col-lg-6 mb-5">
-                        <div class="card rounded video shadow my-auto p-0">
-                            <video id="hwrVideo" class="img-fluid noselect" autoplay loop playsinline muted>
-                                <source src="./vid/ManualVids_edited/hw28.mov" type="video/mp4">
-                              </video>  
-                        </div>
-                    </div>
-                    <div class="col-lg-6 mb-5">
-                        <p class="stretch" style="font-size: 16px;">
-                            <b>Inserting new content</b>
-                            <ul>
-                                <li>Click or tap between any words for insert and a panel will show up for user to input by writing or typing</li>
-                                <li>Handwriting/Typing mode can be toggled through buttons at top of the panel.</li>
-                                <li>If user used typing mode, the text will automatically be inserted after clicking "+" button.</li>
-                                <li>If used handwriting mode, the strokes will then be saved as a blue sticky note on side, 
-                                  and user can choose to convert to text then insert to record.</li>
-                                  <li>Tap/Click on the sticky note for editing the annotation.</li>
-
-                              </ul>
-                            </p>
-                    </div>
-                  </div>
-
-                  <div class="row flex-row  justify-content-center mb-5">
-                      <div class="col-lg-6 mb-5">
-                          <div class="card rounded video shadow my-auto p-0">
-                              <video id="hwrVideo" class="img-fluid noselect" autoplay loop playsinline muted>
-                                  <source src="./vid/ManualVids_edited/hw18.mov" type="video/mp4">
-                                </video>                                  
-                          </div>
-                      </div>
-                      <div class="col-lg-6 mb-5">
-                          <p class="stretch" style="font-size: 16px;">
-                              <b>Annotation/Insert position anchor </b>
-                                  <li>Move pen over the sticky notes to show the original positions of the edit in the record.</li>
-                              </p>
-                      </div>
-                    </div>
-
-
-                  <div class="row flex-row  justify-content-center mb-5">
-                      <div class="col-lg-6 mb-5">
-                          <div class="card rounded video shadow my-auto p-0">
-                              <video id="hwrVideo" class="img-fluid noselect" autoplay loop playsinline muted>
-                                  <source src="./vid/ManualVids_edited/hw14.mov" type="video/mp4">
-                                </video>  
-                          </div>
-                      </div>
-                      <div class="col-lg-6 mb-5">
-                          <p class="stretch" style="font-size: 16px;">
-                              <b>Deleting unwanted words</b>
-                                <ul>
-                                  <li>Scratching out text to delete it.</li>
-                                  <li>Deleted word will not show up in the preview mode, however the deleted record is kept in editing mode.</li>
-                                </ul>
-                              </p>
-                      </div>
-                    </div>
-
-                    <div class="row flex-row  justify-content-center mb-5">
-                        <div class="col-lg-6 mb-5">
-                            <div class="card rounded video shadow my-auto p-0">
-                                <video id="hwrVideo" class="img-fluid noselect" autoplay loop playsinline muted>
-                                    <source src="./vid/ManualVids_edited/hw15.mov" type="video/mp4">
-                                  </video>  
-                            </div>
-                        </div>
-                        <div class="col-lg-6 mb-5">
-                            <p class="stretch" style="font-size: 16px;">
-                                <b>Highlighting</b>
-                                  <ul>
-                                      <li>Hold the side button of the pen.</li>
-                                      <li>"Mark" the text you want to highlight.</li>
-                                      <li>Release the pen and the marked text will be highlighted in yellow color.</li>
-                                      <li>You can click on the highlighted text and add comments directly. </li>
-                                  </ul>
-                                </p>
-                        </div>
-                      </div>
-
-                      <div class="row flex-row  justify-content-center mb-5">
-                          <div class="col-lg-6 mb-5">
-                              <div class="card rounded video shadow my-auto p-0">
-                                  <video id="hwrVideo" class="img-fluid noselect" autoplay loop playsinline muted>
-                                      <source src="./vid/ManualVids_edited/hw16.mov" type="video/mp4">
-                                    </video>                                      
-                              </div>
-                          </div>
-                          <div class="col-lg-6 mb-5">
-                              <p class="stretch" style="font-size: 16px;">
-                                  <b>Cancel highlighting/deletion</b>
-                                    <ul>
-                                      <li>Highlighting and deletion can be canceled by first clicking on the highlighted/deleted text.</li>
-                                      <li>Then in the pop-up menu, select "Cancel Highlight" or "Cancel Delete".</li>
-                                    </ul>
-                                  </p>
-                          </div>
-                        </div>
-
-
-                            <div class="row flex-row  justify-content-center mb-5">
-                                <div class="col-lg-6 mb-5">
-                                    <div class="card rounded video shadow my-auto p-0">
-                                        <video id="hwrVideo" class="img-fluid noselect" autoplay loop playsinline muted>
-                                            <source src="./vid/ManualVids_edited/hw19.mov" type="video/mp4">
-                                          </video>                                            
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 mb-5">
-                                    <p class="stretch" style="font-size: 16px;">
-                                        <b>Free-form notes</b>
-                                          <ul>
-                                            <li>The blank side on the right is reserved for any personal additional notes that will not be in the record. </li>
-                                            <li>The user can also use add-ins to insert drawings, images and take photos or videos.</li> 
-                                          </ul>
-                                        </p>
-                                </div>
-                              </div>
-    </div>
-    </section>
-
-
-    <!-- FOOTER RESPONSIVE-->
-    <footer>
-      <div class="container">
-        <p class="noselect">&copy; PhenoPad 2018. All Rights Reserved.</p>
-      </div>
+    <footer class="footer">
+      <p>&copy; PhenoPad 2018. All Rights Reserved.</p>
     </footer>
-    
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-    <!-- Custom scripts for this template -->
-    <script src="js/new-age.min.js"></script>
 
+    <dialog class="lightbox" data-lightbox-dialog aria-label="Image preview">
+      <button class="lightbox-close" type="button" data-lightbox-close aria-label="Close preview">Close</button>
+      <img src="img/tab-logo.png" alt="" data-lightbox-image>
+      <p data-lightbox-title></p>
+    </dialog>
+
+    <script src="js/site.js"></script>
   </body>
-
 </html>
