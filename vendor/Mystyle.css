@@ -1,0 +1,231 @@
+.motivation{
+    /* background-image: linear-gradient(to right, rgb(22, 155, 196) , yellow); */
+    background-color: #fcfcfc;
+}
+.pp-logo{
+    opacity: .95;
+    image-rendering: auto;
+}
+.jumbotron{
+    padding: 0;
+}
+.bg-primary{
+    background-image: linear-gradient(to right bottom, rgb(22, 155, 196) , yellow);
+}
+
+.feature{
+    background-image: url("img/bg-cta.jpg"); 
+}
+
+.parallax {
+    /* The image used */
+    /* background-image: url("img/bg-cta.jpg"); */
+
+    /* Set a specific height */
+    min-height: 500px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.fixed-height{
+    height: 500px;
+}
+.intro p{
+    font-size: 12pt;
+}
+.intro h1{
+    font-weight: bolder;
+}
+.intro li{
+    font-size:11pt;
+}
+.bg-black{
+    background-color: black;
+}
+
+.contact-card{
+    background-color: #fcfcfc;
+}
+@media (min-width: 800px){
+    .contact-card{
+        background-color: #fcfcfc;
+        width: 50%;
+    }
+
+}
+@media (min-width: 1280px){
+
+    .btn-outline-black{
+        width:40%;
+        align-self: center;
+        align-items: center;
+    }
+
+
+}
+section.contact{
+    color:aliceblue;
+    /* background-image: linear-gradient(to right bottom, rgb(22, 155, 196) , rgb(243, 221, 23)) !important; */
+    background: url("../img/bg-pattern.png"), linear-gradient(to right top, #a83afc, #4389d8) !important;    
+    background-attachment: fixed !important;
+}
+.contact-card p{
+    color:#37383a;
+    font-size:12pt;
+}
+.contact-card h3{
+    color:#37383a;
+    font-weight: 400;
+}
+.linker{
+    background-color: transparent;
+    background-image: none;
+}
+.features{
+    background-color: rgb(255, 255, 255);
+}
+.hwr{
+    background-color: #f1efef;
+}
+.speech{
+    background-color: rgb(255, 255, 255);
+}
+.cds{
+    background-color: #f1efef;
+}
+.extra{
+    background-color: rgb(255, 255, 255);
+}
+.display-5{
+    font-family: 'Rubik', sans-serif;
+    color: rgb(58, 58, 99) !important;
+    font-size: 30pt;
+}
+.text-light{
+    color:rgb(74, 78, 133) !important;
+    font-size: 13pt;
+    font-family: Raleway;
+    letter-spacing: 0pt;
+    font-weight: 100;
+}
+p.header-caption{
+    font-family: "Heebo" !important;
+    font-size:18pt;    
+    font-weight: lighter;
+}
+.container-sm{
+    width: 90% !important;
+    align-content: center;
+    display: block;
+}
+.intro{
+    background-image: url("img/bg-cta.jpg") !important;
+}
+
+.card-light-bg{
+    background-color: rgba(228, 236, 250, 0.13) !important; 
+}
+.card-subtitle{
+    font-family: 'Raleway' !important;
+    font-weight: lighter !important;
+    font-size: 0.9rem !important;
+    margin-top: 5pt;
+    letter-spacing: 0pt;
+    text-align: center;
+    text-justify: inter-word;
+}
+.card-title{
+    font-family: 'Rubik' !important;
+    color: rgb(58, 58, 99) !important;
+    font-weight: bold;
+    font-size: 18pt;
+    text-align: center;
+}
+
+ ol.carousel-indicators {
+    position: absolute;
+    margin: 0;
+    left: 0;
+    right: 0;
+    width: auto;
+    bottom: -40px;
+ }
+ 
+ ol.carousel-indicators li{
+    width: 1rem;
+    height: 1rem;
+    margin: 5pt;
+    border-radius: 50%;
+    border: 0;
+    background: rgba(49, 20, 95, 0.171);
+ }
+ 
+ 
+ ol.carousel-indicators li.active {
+    background:linear-gradient(to right top, #c53afc, #4389d8) !important; 
+    
+ }
+ .noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome and Opera */
+  }
+
+.h-85{
+    height: 85vh;
+}
+
+.h-contact{
+    height: 100vh - 68;
+}
+.zoomable:hover{
+    cursor: url("../img/zoomin.png"),zoom-in;
+}
+
+.stretch{
+    text-align: justify;
+    text-justify: inter-word;
+}
+/* Disables the selection */
+.disableselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none;   /* Chrome/Safari/Opera */
+    -khtml-user-select: none;    /* Konqueror */
+    -moz-user-select: none;      /* Firefox */
+    -ms-user-select: none;       /* Internet Explorer/Edge*/
+     user-select: none;          /* Non-prefixed version, currently 
+                                    not supported by any browser */
+  }
+
+.figure-caption{
+    color: rgb(18, 18, 32) !important;
+    font-size:95%;
+}
+.fixed-height{
+    height: 17rem;
+}
+  
+  /* Disables the drag event 
+  (mostly used for images) */
+  .disabledrag{
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+    -user-drag: none;
+  }
+
+.video{
+    border: 4px double rgba(26, 26, 48, 0.37);
+}
+
+
+
